@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+captures/
+drafts/
+test-results/
+dist/
+*.zip
+*.log
+.DS_Store

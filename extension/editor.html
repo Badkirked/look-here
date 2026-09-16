@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Look here — mark this page</title><link rel="stylesheet" href="editor.css"><script defer src="db.js"></script><script defer src="policy.js"></script><script defer src="editor.js"></script></head>
+<body>
+<header><div><h1>Look here</h1><p id="source">Loading your page capture…</p></div><button id="settings">Settings</button><button id="close">Close</button></header>
+<main>
+  <div class="tools" aria-label="Drawing tools"><button id="point" aria-pressed="true">Point / draw</button><button id="box" aria-pressed="false">Box</button><button id="undo">Undo</button><label>View <select id="zoom"><option value="fit">Fit width</option><option value="actual">Actual size</option></select></label><span>Mark anywhere on the frozen page.</span></div>
+  <div id="stage"><canvas id="picture" aria-label="Captured page. Click to point or drag to draw."></canvas></div>
+  <footer><p id="destination">Local export — no receiver configured</p><div class="send"><input id="note" aria-label="Optional note" maxlength="2000" placeholder="Optional: move this button, change this part…"><button id="export" disabled>Export file</button><button id="save" disabled>Upload mark</button></div><p id="message" role="status" aria-live="polite">Export includes the original screenshot and your marks. Drawing is not redaction.</p></footer>
+</main>
+</body></html>
