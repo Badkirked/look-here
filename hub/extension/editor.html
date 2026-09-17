@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Look here — mark this page</title><link rel="stylesheet" href="editor.css"><script defer src="config.js"></script><script defer src="db.js"></script><script defer src="editor.js"></script></head>
+<body>
+<header><div><h1>Look here</h1><p id="source">Loading your page capture…</p></div><button id="close">Close</button></header>
+<main>
+  <div class="tools" aria-label="Drawing tools"><button id="point" aria-pressed="true">Point / draw</button><button id="box" aria-pressed="false">Box</button><button id="redact" aria-pressed="false">Redact</button><button id="undo">Undo</button><label>View <select id="zoom"><option value="fit">Fit width</option><option value="actual">Actual size</option></select></label><a href="options.html" target="_blank">History / settings</a><span>Viewport screenshot. Redact permanently blacks out an area in both images. Earlier saved copies must be deleted separately.</span></div>
+  <div id="stage"><canvas id="picture" aria-label="Captured page. Click to point or drag to draw."></canvas></div>
+  <footer><div class="send"><input id="project" maxlength="120" placeholder="Project"><input id="thread" maxlength="120" placeholder="Conversation / task"></div><div class="send"><input id="note" aria-label="Optional note" maxlength="2000" placeholder="Optional: move this button, change this part…"><button id="save" disabled>Save mark</button></div><p id="message" role="status" aria-live="polite">The screenshot stays on this laptop until you save it to the LAN.</p></footer>
+</main>
+</body></html>

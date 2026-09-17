@@ -1,3 +1,9 @@
+## Edition scope
+
+The original review below covers the standalone `extension/` package. Hub Edition 1.2.0 is a separate package: see [hub integration boundaries](hub/README.md).
+
+The hub edition uses session cookies for the explicitly configured hub. It requires the host's authentication, authorization, CSRF protection and file access controls. It does not supply those controls and is not multi-tenant. No host permissions are pre-granted. Its redaction changes both PNGs for future saves but cannot retract previous uploads. Unsent drafts persist until the owner deletes them. The optional watcher can open URLs automatically; review mode and domain filters are available. Its credential-pattern filters are not a complete secret detector. Test fixtures are intentionally unauthenticated and must remain loopback-only.
+
 # Security and privacy
 
 Look Here is a screenshot-sharing tool. Screenshots may contain private information even when the marked area does not. Review the entire captured viewport before exporting or uploading. Both the original and annotated image are included; drawing over information does not redact it.

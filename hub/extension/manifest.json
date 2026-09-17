@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Look Here - Hub Edition",
+  "version": "1.2.0",
+  "description": "Capture, annotate and redact browser screenshots for your own Look Here hub. Optional tmux link review.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [],
+  "action": {
+    "default_title": "Look here \u2014 capture this page",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      }
+    }
+  },
+  "options_page": "options.html",
+  "minimum_chrome_version": "120",
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

@@ -6,6 +6,17 @@ Look Here captures the visible page, opens a frozen copy, and lets you click, dr
 
 [Try the interactive demo](https://badkirked.github.io/look-here/) · [Download releases](https://github.com/Badkirked/look-here/releases)
 
+## Choose an edition
+
+| Edition | Install folder | Use it for |
+| --- | --- | --- |
+| Standalone | `extension/` | Offline JSON export and optional upload to your own receiver |
+| Hub 1.2.0 | `hub/extension/` | Redaction, saved marks/history, project labels and optional tmux link review with a compatible authenticated hub |
+
+[Hub installation and integration](hub/README.md) · [1.2.0 changes](CHANGELOG.md)
+
+The editions are separate packages. The public hub edition contains no private host inventory, credentials or default LAN destination. The instructions and privacy behavior below apply to the **standalone edition**; use the hub guide for 1.2.0.
+
 ## Install
 
 1. Download this repository and extract it.
